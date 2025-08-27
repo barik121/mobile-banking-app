@@ -3,9 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Mobile Banking</title>
+
+    <!-- tailwind cdn -->
+     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+     <!-- daisy UI -->
+      <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
 </head>
-<body>
-    
+<body class="bg-[#f4f5f7] h-[100vh] flex flex-col justify-center items-center">
+    <div class="h-[158px] w-[316px] bg-[url(./assets/bg.png)] bg-cover flex justify-center items-center">
+        <img src="./assets/Group.png" alt="">
+
+    </div>
+    <form class="bg-white rounded-2xl p-8 w-[350px]">
+        <div class="mt-[16px]">
+            <label class="font-semibold" for="">Mobile Number</label><br>
+            <input id="number" class="bg-[#F4F5F7] mt-3 rounded-3xl w-full" type="text" placeholder="   Enter your number" class="input" />
+        </div>
+        <div class="mt-[16px]">
+            <label class="font-semibold" for="">4 Digit Pin</label><br>
+            <input id="pin" class="bg-[#F4F5F7] mt-3 rounded-3xl w-full" type="text" placeholder="   Enter 4 Digit Pin" class="input" />
+        </div>
+       <button id="login-btn" class="text-white bg-[#0874F2] w-full mt-[20px] rounded-3xl h-[32px]">login</button>
+    </form>
+    <!-- js script -->
+     <script src="script.js"></script>
 </body>
 </html>
